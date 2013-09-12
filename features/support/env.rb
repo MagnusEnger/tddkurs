@@ -9,4 +9,4 @@ require_relative '../../lib/sinatra_app.rb'
 
 World do
   Capybara.app = MyApp
-end
+end 
