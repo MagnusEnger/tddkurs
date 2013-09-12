@@ -1,0 +1,23 @@
+When(/^I go to the main page$/) do
+  visit "/"
+end
+
+Then(/^I should see the default greeting$/) do
+  page.should have_content "Hello World"
+end
+
+Given(/^the following books:$/) do |table|
+  @table = table # Cucumber::Ast::Table
+end
+
+When(/^I search for "(.*?)"$/) do |arg1|
+  page.driver.post "/search/" + arg1
+end
+
+Then(/^I should see all the books starting with "(.*?)"$/) do |arg1|
+  # page.should have_content "ABC" 
+  # page.should have_content "Alle barna"
+  page.should have_content "xyzzzzzzzzzzzzzzzzzz"
+  # puts page.body
+end
+

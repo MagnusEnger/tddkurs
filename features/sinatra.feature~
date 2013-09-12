@@ -1,0 +1,5 @@
+Feature: Using Sinatra with Capybara
+
+    Scenario: main page
+            When I go to the main page
+            Then I should see the default greeting

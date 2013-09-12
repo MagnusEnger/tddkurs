@@ -1,0 +1,13 @@
+class StringCalculator 
+
+  def initialize(logger)
+    @logger = logger
+  end
+  def add(text)
+    return 0 if text == ""
+    number = text.to_i
+    @logger.write("got #{number}")
+    return number
+  end
+
+end

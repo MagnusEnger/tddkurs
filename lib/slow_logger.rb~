@@ -1,0 +1,6 @@
+class SlowLogger
+
+  def write
+  end
+
+end
