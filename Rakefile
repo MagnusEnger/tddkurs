@@ -4,12 +4,11 @@ require 'cucumber'
 require 'cucumber/rake/task'
 
 RSpec::Core::RakeTask.new(:spec) do |t|
-  t.pattern = './spec/string_calc_spec.rb'
   t.rspec_opts = "--format doc"
 end
 
 Cucumber::Rake::Task.new(:features) do |t|
-  t.cucumber_opts = 'features/sinatra.feature --format pretty'
+  t.cucumber_opts = 'features --format pretty'
 end
 
 task :default => [:spec, :features]
