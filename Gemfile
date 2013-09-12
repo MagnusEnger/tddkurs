@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'rspec'
+gem 'guard-rspec'
+gem 'bogus'
+gem 'capybara'
+gem 'cucumber'
+gem 'sinatra'
